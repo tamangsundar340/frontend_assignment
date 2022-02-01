@@ -1,0 +1,220 @@
+body {
+    background-color: #fafafa;
+    margin: 0px;
+    padding: 0px;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+
+.open-model {
+    cursor: pointer;
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+}
+
+/* modal css */
+.is-hidden {
+    display: none;
+}
+
+.modal-container {
+    width: 500px;
+    height: auto;
+    min-height: 500px;
+    background: #fff;
+    box-shadow: 0 2px 6px #777;
+    -webkit-overflow-scrolling: touch;
+    transition: transform 0.2s, opacity 0.2s;
+    will-change: transform;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-header {
+    padding: 0px 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-header .heading-title {
+    cursor: pointer;
+}
+
+.button-close {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.modal-content {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    flex-grow: 1;
+    padding-top: 0px !important;
+    padding: 1.5rem;
+    display: none;
+}
+
+.modal-content p {
+    text-align: justify;
+    line-height: 1.5em;
+    color: #222;
+}
+
+/* modal css end*/
+
+/* upload button css */
+.upload-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+button {
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    transition: 0.5s;
+    padding: 10px 25px;
+    border: 2px solid #3489db;
+    background: #3489db;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+/* upload button css end*/
+
+
+/* post form css */
+#form {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 6px #777;
+    padding: 20px;
+}
+
+.form {
+    margin: 10px;
+}
+
+.form img {
+    max-width: 200px;
+    max-width: 200px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    outline: none;
+}
+
+.form button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.form-button-close {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    top: 175px;
+    float: right;
+    right: 10px;
+    cursor: pointer;
+}
+
+.form-hidden {
+    display: none;
+}
+
+/* post form css end */
+
+
+/* post image css */
+.display-post {
+    margin: 10px;
+    height: 200px;
+    width: 300px;
+}
+
+#table-banner {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+/* post image css end*/
+
+/* delete icon css */
+.post-image {
+    position: relative;
+    display: inline-block;
+}
+
+.post-image:hover .delete {
+    display: block;
+}
+
+.delete {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 3px;
+    display: none;
+}
+
+.delete a {
+    color: red;
+}
+
+/* delete icon css end*/
+
+
+/* media queries */
+@media screen and (max-width:768px) {
+    .open-model {
+        cursor: pointer;
+        margin: 10px;
+        height: 200px;
+        width: 300px;
+    }
+
+    .modal-container {
+        width: 100%;
+        height: auto;
+        min-height: 500px;
+        position: relative;
+        margin: 5% auto 0;
+        background: #fff;
+        border-radius: 3px;
+
+        display: flex;
+        flex-direction: column;
+        -webkit-overflow-scrolling: touch
+    }
+
+    .modal-content {
+        height: 100%;
+    }
+
+    .modal-content p {
+        font-size: 14px;
+    }
+}

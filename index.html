@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FrontEndAssignement</title>
+  <!-- css link -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- font-awesome link -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <!-- main puppy image -->
+    <img src="img/husky (3).jpg" alt="puppyImage" class="open-model" onclick="openModal()">
+
+    <p id="response-message"></p>
+    <!-- post image section -->
+    <div class="display-post">
+      <div class="post-image">
+        <img src="" id="table-banner" alt="postImages" class="table-banner" />
+        <div class="delete"><a href="" onclick="ConfirmDelete();">
+            <i class="fa fa-times fa-lg"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- post image section end -->
+
+    <!-- modal section  -->
+    <div class="overlay is-hidden" id="overlay">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h3 class="heading-title">Siberian Husky</h3>
+          <span class="button-close" onclick="closeModal();">
+            <i class="fa fa-times fa-lg"></i></a>
+          </span>
+        </div>
+        <div class="modal-content" id="modal-content">
+          <div>
+            <p>
+              The Siberian Husky is a medium-sized working dog breed. The breed belongs to the Spitz genetic family.
+              It
+              is
+              recognizable by its thickly furred double coat, erect triangular ears, and distinctive markings, and is
+              smaller than a very similar-looking dog, the Alaskan Malamute
+            </p>
+
+            <p><b>Life expectancy:</b> 12-15 years</p>
+            <p><b>Origin:</b> Siberia</p>
+            <p><b>Colors:</b> White, Black, Black & Tan etc.</p>
+            <p><b>Temperament:</b> Friendly, Intelligent, Outgoing, Alert, Gentle</p>
+            <p><b>Height:</b> Female: 50–56 cm, Male: 54–60 cm</p>
+            <p><b>Weight:</b> Female: 16–23 kg, Male: 20–27 kg</p>
+            <p><b>Life expectancy:</b> 12-15 years</p>
+            <p><b>Origin:</b> Siberia</p>
+          </div>
+        </div>
+        <div class="upload-button">
+          <button onclick="openModalForm()" id="upload-button">Upload</button>
+        </div>
+        <div class="form form-hidden" id="form">
+          <span class="form-button-close" onclick="closeModalForm();">
+            <i class="fa fa-times fa-lg"></i></a>
+          </span>
+          <!-- post form -->
+          <form id="myform">
+            <label for="numbers">Enter a number</label>
+            <br>
+            <br>
+            <input type="text" id="numbers" name="numbers" required placeholder="Enter a number..">
+            <br>
+            <br>
+            <input type='file' onchange="readURL(this);" id="image" required />
+            <br>
+            <br>
+            <img id="blah" src="http://placehold.it/150" alt="your image" />
+            <br>
+            <br>
+            <button id="submit" type="submit">Submit</button>
+          </form>
+          <!-- post form end-->
+        </div>
+      </div>
+    </div>
+    <!-- modal section  end-->
+
+  </div>
+</body>
+<!-- script link -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/myscripts.js"></script>
+
+</html>
